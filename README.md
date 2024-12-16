@@ -25,5 +25,5 @@
 ### therapeutic_categories.json
     latest record id: 338 (newely added records must start from this id)
 
-### I have included a bulk JSON file that contans all the records and the script i used to separate it in this repository as well, to provide the possibility of updating the entire json file at once and generate individual json tables data (jsn file names are created based on table name in the bulk jsn file)
+### I have included a bulk JSON file that contans all the records and the script i used to separate it in this repository as well, to provide the possibility of updating the entire json file at once and generate individual json tables data (json file names are created based on table name in the bulk json file)
 ### Note: I have noticed that the drug table in the database has more columns than the elements in the drugs json file, This will eender the other columns Emtpy. 
