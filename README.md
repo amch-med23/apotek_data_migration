@@ -37,4 +37,4 @@
     latest record id: 338 (newely added records must start from this id)
 
 ### I have included a bulk JSON file that contains all the records and the script i used to separate it in this repository as well, to provide the possibility of updating the entire json file at once and generate individual json tables data (json file are named based on table names in the bulk json file)
-### Note: I have noticed that the specific tables in the database has more columns than the elements in the tables json files, This will render the other columns Emtpy. 
+### Note: I have noticed that the specific tables in the database has more columns than the elements in the json files, This will render the other columns Emtpy. 
