@@ -1,5 +1,5 @@
 ## This includes the main SQL script and the initial JSON files data, with theire insertion bash scripts
-### any update to the JSON files will require to finish from the latest used record id, since the supplied insertion bash scripts use IF NOT EXISTS statement which knows for it's performance, but doesn't update column data.
+### any update to the JSON files will require to start from the latest used record id, since the supplied insertion bash scripts use IF NOT EXISTS statement which knows for it's performance, but doesn't update column data.
 ### So it's important to take that in mind when updating the json files for each table (adding new recrds).
 ### this README.md file must be updated after each json file update (to update the latest record id, etc...).
 
