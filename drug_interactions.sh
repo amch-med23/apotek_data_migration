@@ -10,9 +10,9 @@ cat drug_interactions.json | jq -c '.[]' | while read drug_interaction; do
     description_interaction=$(echo $drug_interaction | jq -r '.description_interaction' | sed "s/'/''/g")
 
     # Check if the record with the same id exists and insert it if it doesn't
-    mysql -u root -p 'rootP@ssw0rd' -e "
+    mysql -u root -p'rootP@ssw0rd' -e "
     USE apotek_db;
     SET NAMES 'utf8mb4';
-    INSERT IGNORE INTO drug_interactions (id, drug_id_1, drug_id_2, interaction_type_id, niveau, mecanisme, description_interaction)
-    VALUES ($id, '$drug_id_1', '$drug_id_2', '$interaction_type_id', '$niveau', '$mecanisme', $description_interaction);"
+    INSERT INTO drug_interactions (id, drug_id_1, drug_id_2, interaction_type_id, niveau, mecanisme, description_interaction)
+    VALUES ($id, '$drug_id_1', '$drug_id_2', '$interaction_type_id', '$niveau', '$mecanisme', '$description_interaction');"
 done
