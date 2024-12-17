@@ -3,7 +3,7 @@
 ### So it's important to take that in mind when updating the json files for each table (adding new recrds).
 ### this README.md file must be updated after each json file update (to update the latest record id, etc...).
 
-## Very important note: the insertion order is very important in this case (tables referancing could cause errors if not handeled prperly), this is the correct order of insertion:
+## Very important note: the insertion order is very important in this case (tables referances could cause errors if not handeled properly), this is the correct order of insertion (in this case):
     1-drugs.sh
     2-adverse_effects.sh
     3-clinical_conditions.sh
