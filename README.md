@@ -3,6 +3,17 @@
 ### So it's important to take that in mind when updating the json files for each table (adding new recrds).
 ### this README.md file must be updated after each json file update (to update the latest record id, etc...).
 
+## Very important note: the insertion order is very important in this case (tables referancing could cause errors if not handeled prperly), this is the correct order of insertion:
+    1-drugs.sh
+    2-adverse_effects.sh
+    3-clinical_conditions.sh
+    4-clinical_drug_recommendations.sh
+    5-contraindications.sh
+    6-drug_adverse_effects.sh
+    7-drug_contraindications.sh
+    8-interactions_types.sh
+    9-drug_interactions.sh
+    10-therapeutic_categories.sh
 ## the available json files for each table are:
 ### drugs.json
     latest record id: 1003 (newely added records must start from this id)
